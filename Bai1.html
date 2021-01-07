@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function findMax(arr) {
+
+        //Test
+
+        arr = [1, 2, 7, 4, 5];
+        var max = arr[0];
+
+        // function
+        for (var i = 0; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i]
+            }
+        }
+        return max;
+    }
+    //Check
+    var result = findMax();
+    console.log(result)
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function tryRemoveFromArray(arr, x){
+
+        // Test
+        var arr = [1,2,3,4,5];
+        var x = 3
+
+        //function
+
+        for(var i = 0; i < arr.length; i++){
+            if(arr[i] == x){
+                arr.splice(i,1);
+                break;
+            }
+        }
+        return arr;
+    }
+    var result = tryRemoveFromArray()();
+    console.log(result)
+</script>

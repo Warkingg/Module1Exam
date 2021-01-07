@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+<center><canvas id="myCanvas" width="400px" height="800x" style="border:1px solid #d3d3d3;"></canvas></center>
+</body>
+</html>
+<script>
+    function Circle(x,y,radius,color){
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.color = color;
+    }
+    function drawCircle(){
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+        var radius = 100
+        var color = "#CA482C";
+        var x = 10;
+        var y = 10;
+        var circle= new Circle(x, y, radius,color);
+        ctx.beginPath();
+        ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI,circle.color);
+        ctx.fillStyle = color;
+        ctx.fill();
+    }
+    drawCircle();
+</script>
